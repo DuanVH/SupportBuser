@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/iv_back_examine"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:layout_weight="1"
+            android:text="Phiếu khảo sát ý kiến"
+            android:textColor="@color/colorWhite"
+            android:textSize="20dp" />
+    </TableRow>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:text="1. Thái độ phục vụ của nhân viên lái xe, bán vé"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20dp" />
+
+
+                <RadioGroup
+                    android:id="@+id/rg_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/rb_examine1_rat_tot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="10dp"
+                        android:text="Rất tốt"
+                        android:textSize="18dp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_examine1_tot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="10dp"
+                        android:text="Tốt"
+                        android:textSize="18dp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_examine1_tb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@id/rb_feedback_speed_tot"
+                        android:padding="10dp"
+                        android:text="Trung bình"
+                        android:textSize="18dp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_examine1_kem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rb_feedback_speed_tot"
+                        android:layout_marginLeft="20dp"
+                        android:padding="10dp"
+                        android:text="Kém"
+                        android:textSize="18dp" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:text="2. Việc dừng đỗ đón trả khách và vận hành xe buýt của lái xe"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20dp" />
+
+
+                <RadioGroup
+                    android:id="@+id/rg_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/rb_examine2_rat_tot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="10dp"
+                        android:text="Rất tốt"
+                        android:textSize="18dp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_examine2_tot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="10dp"
+                        android:text="Tốt"
+                        android:textSize="18dp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_examine2_tb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@id/rb_feedback_speed_tot"
+                        android:padding="10dp"
+                        android:text="Trung bình"
+                        android:textSize="18dp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_examine2_kem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rb_feedback_speed_tot"
+                        android:layout_marginLeft="20dp"
+                        android:padding="10dp"
+                        android:text="Kém"
+                        android:textSize="18dp" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:paddingLeft="15dp"
+                    android:text="3. Chất lượng phương tiện"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20dp" />
+
+
+                <RadioGroup
+                    android:id="@+id/rg_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/rb_examine3_rat_tot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="10dp"
+                        android:text="Rất tốt"
+                        android:textSize="18dp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_examine3_tot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="10dp"
+                        android:text="Tốt"
+                        android:textSize="18dp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_examine3_tb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@id/rb_feedback_speed_tot"
+                        android:padding="10dp"
+                        android:text="Trung bình"
+                        android:textSize="18dp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_examine3_kem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rb_feedback_speed_tot"
+                        android:layout_marginLeft="20dp"
+                        android:padding="10dp"
+                        android:text="Kém"
+                        android:textSize="18dp" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:paddingLeft="15dp"
+                    android:text="4. Tính hợp lý, thuận tiện của hệ thống điểm dừng, nhà chờ xe buýt"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20dp" />
+
+
+                <RadioGroup
+                    android:id="@+id/rg_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/rb_examine4_rat_tot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="10dp"
+                        android:text="Rất tốt"
+                        android:textSize="18dp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_examine4_tot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="10dp"
+                        android:text="Tốt"
+                        android:textSize="18dp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_examine4_tb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@id/rb_feedback_speed_tot"
+                        android:padding="10dp"
+                        android:text="Trung bình"
+                        android:textSize="18dp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_examine4_kem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rb_feedback_speed_tot"
+                        android:layout_marginLeft="20dp"
+                        android:padding="10dp"
+                        android:text="Kém"
+                        android:textSize="18dp" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:paddingLeft="15dp"
+                    android:text="5. Tiếp nhận và xử lý thông tin qua đường dây nóng"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20dp" />
+
+
+                <RadioGroup
+                    android:id="@+id/rg_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/rb_examine5_rat_tot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="10dp"
+                        android:text="Rất tốt"
+                        android:textSize="18dp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_examine5_tot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="10dp"
+                        android:text="Tốt"
+                        android:textSize="18dp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_examine5_tb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@id/rb_feedback_speed_tot"
+                        android:padding="10dp"
+                        android:text="Trung bình"
+                        android:textSize="18dp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_examine5_kem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rb_feedback_speed_tot"
+                        android:layout_marginLeft="20dp"
+                        android:padding="10dp"
+                        android:text="Kém"
+                        android:textSize="18dp" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:text="6. Góp ý khác của bạn"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/edt_khao_sat_khac"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="Nhập nội dung phản hồi của bạn"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/bt_khao_sat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@color/colorGreen"
+                android:text="GỬI KHẢO SÁT"
+                android:textColor="@color/colorWhite" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

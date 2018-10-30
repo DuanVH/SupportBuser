@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableRow
+        android:id="@+id/tr_on_title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/iv_back_report"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:layout_weight="1"
+            android:text="Ý kiến khách hàng"
+            android:textColor="@color/colorWhite"
+            android:textSize="20dp" />
+    </TableRow>
+
+    <LinearLayout
+        android:id="@+id/ll_report"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/tr_on_title"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:paddingLeft="70dp"
+            android:text="Góp ý về dịch vụ xe buýt"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20dp" />
+
+        <TableRow
+            android:id="@+id/tr_report"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                android:src="@drawable/report_card" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Nếu quý khách chưa hài lòng, xin vui lòng góp ý tại đây"
+                android:textSize="18dp" />
+        </TableRow>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_examine"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/ll_report"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:paddingLeft="70dp"
+            android:text="Phiếu khảo sát ý kiến khách hàng"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20dp" />
+
+        <TableRow
+            android:id="@+id/tr_examine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                android:src="@drawable/report_examine" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Quý khách vui lòng thực hiện phiếu khảo sát  tại đây"
+                android:textSize="18dp" />
+        </TableRow>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/ll_examine"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:paddingLeft="70dp"
+            android:text="Góp ý về ứng dụng"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20dp" />
+
+        <TableRow
+            android:id="@+id/tr_feedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                android:src="@drawable/report_feedback" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Mọi góp ý của quý khách sẽ được chúng tôi ghi nhận và nâng cấp"
+                android:textSize="18dp" />
+        </TableRow>
+    </LinearLayout>
+
+    <!--<android.support.constraint.ConstraintLayout-->
+        <!--android:id="@+id/fl_frg_content"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+        <!--<fragment-->
+            <!--android:id="@+id/frg_report_report"-->
+            <!--android:name="com.example.maboy.supportbuser.FragmentReportReport"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent" />-->
+
+        <!--<fragment-->
+            <!--android:id="@+id/frg_report_examine"-->
+            <!--android:name="com.example.maboy.supportbuser.FragmentReportExamine"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent" />-->
+
+        <!--<fragment-->
+            <!--android:id="@+id/frg_report_feedback"-->
+            <!--android:name="com.example.maboy.supportbuser.FragmentReportFeedback"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent" />-->
+
+    <!--</android.support.constraint.ConstraintLayout>-->
+</RelativeLayout>

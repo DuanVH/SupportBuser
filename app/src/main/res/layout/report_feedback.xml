@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/iv_back_feedback"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:layout_weight="1"
+            android:text="Góp ý về ứng dụng"
+            android:textColor="@color/colorWhite"
+            android:textSize="20dp" />
+    </TableRow>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:paddingLeft="15dp"
+                    android:text="Tốc độ truyền dữ liệu"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20dp" />
+
+
+                <RadioGroup
+                    android:id="@+id/rg_feedback_speed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/rb_feedback_speed_tot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="10dp"
+                        android:text="Tốt"
+                        android:textSize="18dp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_feedback_speed_tb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@id/rb_feedback_speed_tot"
+                        android:padding="10dp"
+                        android:text="Trung bình"
+                        android:textSize="18dp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_feedback_speed_yeu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rb_feedback_speed_tot"
+                        android:layout_marginLeft="20dp"
+                        android:padding="10dp"
+                        android:text="Yếu"
+                        android:textSize="18dp" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:paddingLeft="15dp"
+                    android:text="Tính năng sử dụng"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20dp" />
+
+
+                <RadioGroup
+                    android:id="@+id/rg_feedback_function"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/rb_feedback_function_tot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="10dp"
+                        android:text="Tốt"
+                        android:textSize="18dp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_feedback_function_tb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@id/rb_feedback_function_tot"
+                        android:padding="10dp"
+                        android:text="Trung bình"
+                        android:textSize="18dp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_feedback_function_yeu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rb_feedback_function_tot"
+                        android:layout_marginLeft="20dp"
+                        android:padding="10dp"
+                        android:text="Yếu"
+                        android:textSize="18dp" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:paddingLeft="15dp"
+                    android:text="Tính chính xác tư vấn"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20dp" />
+
+
+                <RadioGroup
+                    android:id="@+id/rg_feedback_exactly"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/rb_feedback_exactly_tot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="10dp"
+                        android:text="Tốt"
+                        android:textSize="18dp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_feedback_exactly_tb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@id/rb_feedback_exactly_tot"
+                        android:padding="10dp"
+                        android:text="Trung bình"
+                        android:textSize="18dp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_feedback_exactly_yeu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rb_feedback_exactly_tot"
+                        android:layout_marginLeft="20dp"
+                        android:padding="10dp"
+                        android:text="Yếu"
+                        android:textSize="18dp" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:text="Nội dung(*)"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/edt_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="Nhập nội dung phản hồi của bạn"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/bt_danh_gia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@color/colorGreen"
+                android:text="GỬI ĐÁNH GIÁ"
+                android:textColor="@color/colorWhite" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

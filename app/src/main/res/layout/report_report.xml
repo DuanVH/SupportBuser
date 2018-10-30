@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableRow
+        android:id="@+id/tr_report_title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/iv_back_report"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:layout_weight="1"
+            android:text="Góp ý về dịch vụ"
+            android:textColor="@color/colorWhite"
+            android:textSize="20dp" />
+    </TableRow>
+
+    <TextView
+        android:id="@+id/tv_name_about"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/tr_report_title"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="15dp"
+        android:text="Phản ánh về"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp" />
+
+
+    <RadioGroup
+        android:id="@+id/rg_rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name_about">
+
+        <RadioButton
+            android:id="@+id/rb_thai_do"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:padding="10dp"
+            android:text="Thái độ phục vụ"
+            android:textSize="18dp" />
+
+        <RadioButton
+            android:id="@+id/rb_dung_do"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/rb_feedback_exactly_tot"
+            android:padding="10dp"
+            android:text="Dừng đỗ vận hành"
+            android:textSize="18dp" />
+
+        <RadioButton
+            android:id="@+id/rb_chat_luong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rb_feedback_exactly_tot"
+            android:layout_marginLeft="20dp"
+            android:padding="10dp"
+            android:text="Chất lượng phương tiện"
+            android:textSize="18dp" />
+
+        <RadioButton
+            android:id="@+id/rb_atgt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rb_feedback_exactly_tot"
+            android:layout_marginLeft="20dp"
+            android:padding="10dp"
+            android:text="ATGT"
+            android:textSize="18dp" />
+
+        <RadioButton
+            android:id="@+id/rb_mang_luoi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rb_feedback_exactly_tot"
+            android:layout_marginLeft="20dp"
+            android:padding="10dp"
+            android:text="Mạng lưới tuyến, hạ tầng"
+            android:textSize="18dp" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_name_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rg_rg"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="15dp"
+        android:text="Nội dung(*)"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/edt_content_report"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name_content"
+        android:layout_margin="10dp"
+        android:hint="Nhập nội dung phản hồi của bạn"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/bt_gop_y_khac"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:background="@color/colorGreen"
+        android:text="GỬI GÓP Ý"
+        android:textColor="@color/colorWhite" />
+
+</RelativeLayout>
